@@ -1,0 +1,108 @@
+
+body{
+	font-family: arial;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+
+.a{
+	margin: auto;
+	width:10%;
+	background: #E5F4EE;
+}
+
+.navegacion{
+	width: 700px;
+	margin: 30px auto;
+	background:#EFAE54; 
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li {
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	text-decoration: none;
+}
+
+.menu li a: hover {
+	color: #E6EF54;
+	transition: all .3s;
+}
+
+.sub_menu{
+	position: absolute;
+	background: #FFD197;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .8s;
+}
+
+.sub_menu li a{
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+}
+
+.menu li:hover .sub_menu{
+	visibility: visible;
+	opacity: 1;
+}
+
+.slider{
+	width: 95%
+	margin:auto;
+	overflow: hidden;
+}
+.slider ul{
+	padding: 0;
+	display: flex;
+	width: 500%;
+
+	animation:  cambio 20s infinite alternate linear;
+}
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+.slider img{
+	width: 100%;
+}
+
+@keyframes cambio {
+ 	0%{margin-left: 0;}
+ 	20%{margin-left: 0;}
+
+ 	25%{margin-left: -100%;}
+ 	45%{margin-left: -100%;}
+
+ 	50%{margin-left: -200%;}
+ 	70%{margin-left: -200%;}
+
+ 	75%{margin-left: -300%;}
+ 	85%{margin-left: -300%;}
+
+ 	90%{margin-left: -400%;}
+ 	100%{margin-left: -400%;}
+}
+
+footer div{
+	background: #EFAE54;
+	text-align: center;
+	padding: 20px;
+}
+
